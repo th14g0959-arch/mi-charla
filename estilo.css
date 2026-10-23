@@ -2,134 +2,318 @@
    1 · LA PALETA DEL CURSO
    Se escribe UNA sola vez, acá arriba. Todo lo demás usa var().
    ========================================================= */
-:root {
-  /* Los seis colores de la identidad del CET */
-  --violeta:  #2A2765; /**/
-  --rojo:     #DD2E26; /**/
-  --gris:     #e7d8c9; /**/
-  --verde:    #cad182; /**/
-  --negro:    #00090b; /**/
-  --azul:     #345FAA; /**/
+         :root {
+           /* Los seis colores de la identidad del CET */
+           --violeta: #2A2765;
+           /*declara una variable con el nombre y el valor del color. haci con todos*/
+           --rojo: #DD2E26;
+           --gris: #e7d8c9;
+           --verde: #cad182;
+           --negro: #00090b;
+           --azul: #345FAA;
 
-  /* Escala del violeta */
-  --rojo-900: #641220; /**/
-  --rojo-800: #6e1423; /**/
-  --rojo-700: #85182a; /**/
-  --rojo-500: #a11d33; /**/
-  --rojo-300: #b21e35; /**/
-  --rojo-200: #bd1f36; /**/
-  --rojo-100: #c71f37; /**/
-  --rojo-50:  #da1e37; /**/
-  --rojo-25:  #e01e37; /**/
+           /* Escala del violeta */
+           --rojo-1000: #5c0008;
+           --rojo-900: #641220;
+           --rojo-800: #6e1423;
+           --rojo-700: #85182a;
+           --rojo-500: #a11d33;
+           --rojo-300: #b21e35;
+           --rojo-200: #bd1f36;
+           --rojo-100: #c71f37;
+           --rojo-50: #da1e37;
+           --rojo-25: #e01e37;
 
-  --texto:       #641220; /**/
-  --texto-suave: #e01e37; /**/
-  --blanco:      #ffffff; /**/
-}
+           --texto: #e7d8c9;
+           /*declara una variable para el color del texto principal*/
+           --texto-suave: #e01e37;
+           /*declara una variable para textos secundarios o suaves*/
+           --blanco: #ffffff;
+           /*declara la variable del blanco*/
+           --e-1: .25rem;
+           --e-2: .5rem;
+           --e-3: 1rem;
+           --e-4: 1.5rem;
+           --e-5: 2rem;
+           --e-6: 3rem;
+           --e-7: 3.5rem;
+         }
 
-/* =========================================================
+         /* =========================================================
    2 · LA PÁGINA ENTERA
    display:flex + justify-content:center centran la tarjeta
    en pantalla sin usar márgenes a ojo.
    ========================================================= */
-body {
-  margin: 0; /**/
-  min-height: 100vh; /**/
-  display: flex; /**/
-  align-items: center; /**/
-  justify-content: center; /**/
-  background: var(--rojo-900); /**/
-  font-family: "Poppins", "Segoe UI", Arial, sans-serif; /**/
-  color: var(--texto); /**/
-}
+         body {
+           margin: 0;
+           /*quita los espacios en blanco no deseados en el navegador*/
+           min-height: 100vh;
+           /*Asegura que el cuerpo ocupe al menos el 100% de la altura total de la pantalla*/
+           /*convierte el body en un contenedor mas lexible para ordenar sus elementos*/
+           align-items: center;
+           /*centra los elementos del eje secundaria*/
+           justify-content: center;
+           /*centra los elementos del eje principal*/
+           background: var(--rojo-900);
+           /*define el color del fondo de la pantalla*/
+           background-image: url("./img/images.jpg");
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-position: top;
+           font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+           /*define la tipografia del texto*/
+           color: var(--texto);
+           /*define el color del texto del body*/
+         }
 
-/* =========================================================
+         /* =========================================================
    3 · LA TARJETA
    ========================================================= */
-.tarjeta {
-  background: var(--rojo-300); /**/
-  border-top: 8px solid var(--rojo-500); /**/
-  border-radius: 12px; /**/
-  padding: 2.5rem 2rem; /**/
-  text-align: center; /**/
-  max-width: 420px; /**/
-}
+         .tarjeta {
+           background: var(--rojo-300);
+           border-top: 8px solid var(--rojo-500);
+           /*Aplica un borde en la parte superior*/
+           border-radius: 12px;
+           /*Redondea las esquinas del contenedor*/
+           padding: 2.5rem 2rem;
+           /*agrega relleno interno a los lados*/
+           text-align: center;
+           /*alinea horizontalmente al centro del texto y de las imagenes*/
+           max-width: 420px;
+           /*hace que el hancho de la tarjeta tengo un limite osea que nunca supere por eje 420px*/
+         }
 
-/* =========================================================
+         /* =========================================================
    4 · CADA PARTE DE LA TARJETA
    ========================================================= */
-.tarjeta__logo {
-  width: 72px; /**/
-  height: 72px; /**/
-  object-fit: contain; /**/
-}
+         .tarjeta__logo {
+           width: 72px;
+           /*define el ancho de la tarjeta*/
+           height: 72px;
+           /*define la altura de la tarjeta*/
+           object-fit: contain;
+           /*escala la imagen para que encaje dentro del cuadrado de los px elegidos*/
+         }
 
-.tarjeta__curso {
-  margin: .75rem 0 0; /**/
-  font-size: .78rem; /**/
-  font-weight: 600; /**/
-  letter-spacing: .16em; /**/
-  text-transform: uppercase; /**/
-  color: var(--gris); /**/
-}
+         .tarjeta__curso {
+           margin: .75rem 0 0;
+           /*Agrega un margen de 1rem arriba, 0 a los lados y 0 abajo*/
+           font-size: .78rem;
+           /*establece el tamaño de la letra*/
+           font-weight: 600;
+           /*establece el ancho de la tipografia*/
+           letter-spacing: .16em;
+           /*separa las letras aumentando el espacio entre ellas*/
+           text-transform: uppercase;
+           /*Transforma todo el texto automáticamente a letras mayúsculas.*/
+           color: var(--gris);
+           /*define el color del texto usando la variable*/
+         }
 
-.tarjeta__nombre {
-  margin: .4rem 0 0; /**/
-  font-size: 2.2rem; /**/
-  font-weight: 700; /**/
-  letter-spacing: -0.01em; /**/
-  color: var(--gris); /**/
-}
+         .tarjeta__nombre {
+           margin: .4rem 0 0;
+           font-size: 2.2rem;
+           font-weight: 700;
+           letter-spacing: -0.01em;
+           color: var(--gris);
+         }
 
-.tarjeta__frase {
-  margin: 1rem 0 0; /**/
-  font-size: 1.25rem; /**/
-  line-height: 1.55; /**/
-  color: var(--gris); /**/
-}
+         .tarjeta__frase {
+           margin: 1rem 0 0;
+           font-size: 1.25rem;
+           line-height: 1.55;
+           /*define la altura entre lineas de texto */
+           color: var(--gris);
+         }
 
-.tarjeta__autor {
-  margin: 1.25rem 0 0; /**/
-  font-size: .82rem; /**/
-  color: var(--gris); /**/
-}
+         .tarjeta__autor {
+           margin: 1.25rem 0 0;
+           font-size: .82rem;
+           color: var(--gris);
+         }
 
-/* Variante oscura: mismo bloque, otra combinación de la paleta */
-.tarjeta--oscura {
-  background: var(--rojo-500); /**/
-  border-top-color: var(--rojo-300); /**/
-}
+         /* Variante oscura: mismo bloque, otra combinación de la paleta */
+         .tarjeta--oscura {
+           background: var(--rojo-500);
+           border-top-color: var(--rojo-300);
+           /*Sobrescribe únicamente el color del borde superior cambiándolo a la variable*/
+         }
 
-.tarjeta__pregunta {
-  margin: 0; /**/
-  font-size: .8rem; /**/
-  font-weight: 600; /**/
-  letter-spacing: .14em; /**/
-  text-transform: uppercase; /**/
-  color: var(--gris); /**/
-}
+         .tarjeta__pregunta {
+           margin: 0;
+           font-size: .8rem;
+           font-weight: 600;
+           letter-spacing: .14em;
+           text-transform: uppercase;
+           /*Convierte el texto a mayúsculas*/
+           color: var(--gris);
+         }
 
-.tarjeta__respuesta {
-  margin: .5rem 0 0; /**/
-  font-size: 1.4rem; /**/
-  font-weight: 700; /**/
-  color: var(--gris); /**/
-}
+         .tarjeta__respuesta {
+           margin: .5rem 0 0;
+           font-size: 1.4rem;
+           font-weight: 700;
+           color: var(--gris);
+         }
 
-/* Para que las dos tarjetas se apilen con un hueco entre ellas */
-body {
-  flex-direction: column; /**/
-  gap: 1.5rem; /**/
-  padding: 2rem 1rem; /**/
-}
 
-.tarjeta__respuesta--enlace {
-  margin: .5rem 0 0; /**/
-  font-size: 1.4rem; /**/
-  font-weight: 700; /**/
-  color: var(--gris); /**/
-}
+         .tarjeta__respuesta--enlace {
+           margin: .5rem 0 0;
+           font-size: 1.4rem;
+           font-weight: 700;
+           color: var(--gris);
+         }
 
-.imagenes-liverpool {
-  width: 100%; /**/
-}
+         .imagenes-liverpool {
+           width: 100%;
+           /*Hace que el elemento ocupe todo el ancho disponible (100%) dentro de su contenedor padre.*/
+         }
+
+         .tarjeta__respuesta--enlace {
+           display: inline-block;
+           margin-top: 2rem;
+           padding: .9rem 2rem;
+           border-radius: 999px;
+           /* 999px = píldora, sirve para botones */
+           background: var(--texto-suave);
+           color: var(--rojo-300);
+           font-weight: 700;
+           text-decoration: none;
+           /* sin subrayado, es un botón y no un texto */
+         }
+
+         .tarjeta__respuesta--enlace:hover {
+           background: var(--rojo-100);
+         }
+
+         .tarjeta__respuesta--enlace:active {
+           background: var(--rojo-900);
+         }
+
+         /* Accesibilidad: el foco del teclado tiene que verse SIEMPRE */
+         .tarjeta__respuesta--enlace:focus-visible {
+           outline: 3px solid #ffffff;
+           outline-offset: 3px;
+         }
+
+         .ficha {
+           width: 300px;
+           padding: 2rem;
+           border: 2px solid var(--texto);
+           background: var(--rojo-25);
+         }
+
+         /* ¿Dice 300px? Fijate con el cursor: la caja mide 368px. */
+         *,
+         *::before,
+         *::after {
+           box-sizing: border-box;
+         }
+
+         /* =========================================================
+   LA FICHA DE TU IDEA
+   ========================================================= */
+         .ficha {
+           max-width: 520px;
+           margin: var(--e-6) auto;
+           /* 3rem arriba/abajo · auto a los lados = centrada */
+           padding: var(--e-5);
+           /* 2rem de aire adentro */
+           border: 1px solid var(--rojo-500);
+           border-top: 6px solid var(--rojo-500);
+           border-radius: 12px;
+           background: var(--rojo-300);
+         }
+
+         .ficha__etiqueta {
+           margin: 0;
+           font-size: .75rem;
+           letter-spacing: .16em;
+           text-transform: uppercase;
+           color: var(--texto);
+         }
+
+         .ficha__titulo {
+           margin: var(--e-2) 0 var(--e-5);
+           font-size: 1.6rem;
+           line-height: 1.25;
+           color: var(--texto);
+         }
+
+         .ficha__campo {
+           margin: var(--e-4) 0 var(--e-1);
+           font-size: .72rem;
+           letter-spacing: .12em;
+           text-transform: uppercase;
+           color: var(--blanco);
+         }
+
+         .ficha__texto {
+           margin: 0;
+           line-height: 1.65;
+           color: var(--texto);
+         }
+
+         /* las etiquetas: display inline-flex las deja como píldoras */
+         .ficha__tags {
+           margin: var(--e-5) 0 0;
+           padding: 0;
+           display: flex;
+           gap: var(--e-2);
+           list-style: none;
+         }
+
+         .ficha__tags li {
+           padding: var(--e-1) var(--e-3);
+           border-radius: 999px;
+           background: var(--rojo-900);
+           color: var(--texto);
+           font-size: .8rem;
+         }
+
+         /*===================================== Mi Idea =============================*/
+
+         .container {
+           background-color: var(--rojo-1000);
+           width: 1000px;
+           margin: 0 auto;
+           /*top / botton son 0px y auto para left y right*/
+           display: flex;
+           gap: 25px;
+           flex-wrap: wrap;
+           justify-content: center;
+           padding: 10px;
+         }
+
+         .card {
+           background-color: var(--rojo-900);
+           ;
+           width: 360px;
+           text-align: center;
+           border: 3px solid var(--gris);
+           padding: 30px;
+           border-radius: 7px;
+         }
+
+         .card__imagen img {
+           width: 180px;
+           height: 180px;
+         }
+
+         .card__titulo {
+           font-size: 1.7rem;
+           color: rgb(221, 215, 215);
+         }
+
+         .card__parrafo {
+           font-size: 1.3rem;
+           line-height: 1.55;
+         }
+
+         .card__enlace {
+           background-color: #c22c2c;
+           color: black;
+           padding: 10px;
+           border-radius: 20%;
+           margin-bottom: 30px;
+         }

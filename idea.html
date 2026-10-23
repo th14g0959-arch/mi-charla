@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        .container-header {
+            background: #5C0008;
+            background: radial-gradient(circle, rgba(92, 0, 8, 1) 53%, rgba(176, 0, 26, 1) 70%);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /*alinear verticalmnte a los hijos*/
+        }
+
+        .header__logo {
+            width: 100px;
+        }
+        .container-header nav{
+            padding: 15px;
+        }
+
+        .container-header nav ul {
+            list-style: none;
+            /*elimina las viñetas de las listas*/
+            display: flex;
+            gap: 10px;
+        }
+        .container-header a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: var(--gris-);
+            font-weight: 800;
+            font-size: 1.2rem;
+            transition: background-color 0.5 ease;
+
+        }
+        .container-header a:hover {
+            background-color:var(--rojo-700);
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--Encabezado-->
+    <header class="container-header">
+        <img class="header__logo" src="./img/images (2).png" height="90" alt="">
+        <nav>
+            <ul>
+                <li><a class="3nlace" href="">papa</a></li>
+                <li><a class="3nlace" href="">mama</a></li>
+                <li><a class="3nlace" href="">yo =)</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <section class="container"> <!--container-->
+            <article class="card">
+                <!--imagen-->
+                <div class="card__imagen">
+                    <img src="./img//images (1).jpg" height="350" alt="El milagro de stambul">
+                </div>
+                <!--titulo-->
+                <h3 class="card__titulo">El Milagro de Estambul-2005</h3>
+                <!--parrafo-->
+                <p class="card__parrafo">de pasar perdiendo 3-0 en el primer tiempo a empatar en 15 minutos y ganarlo
+                    por penales y ser campeones de champions por 5ta vez</p>
+                <!--enlace-->
+                <a href="https://www.youtube.com/watch?v=NQdiezMj2qM" class="card__enlace">video</a>
+            </article>
+            <article class="card">
+                <!--imagen-->
+                <div class="card__imagen">
+                    <img src="./img/trent-arnold.avif" height="350" alt="Trent Alexander Arnold">
+                </div>
+                <!--titulo-->
+                <h3 class="card__titulo">la remontada de Anfield-2019</h3>
+                <!--parrafo-->
+                <p class="card__parrafo">Trent Alexander-Arnold sorprendió al Barcelona con un córner rápido que terminó
+                    en gol de Divock Origi.terminando de remontar un 0-3 a 4-3 en el global</p>
+                <!--enlace-->
+                <a href="https://www.youtube.com/watch?v=zutXWIRnOV8" class="card__enlace">video</a>
+            </article>
+            <article class="card">
+                <!--imagen-->
+                <div class="card__imagen">
+                    <img src="./img/steven gerrard.jpg" height="350" alt="Steven Gerrard">
+                </div>
+                <!--titulo-->
+                <h3 class="card__titulo">La final de Gerrard-2006</h3>
+                <!--parrafo-->
+                <p class="card__parrafo">Gerrard metio un golazo fuera del area en el tiempo añadido para empatar el
+                    partido y luego salir campeon por penales de la FA Cup</p>
+                <!--enlace-->
+                <a href="https://www.youtube.com/watch?v=sx97LGqGap8" class="card__enlace">video</a>
+            </article>
+            <article class="card">
+                <!--imagen-->
+                <div class="card__imagen">
+                    <img src="./img/images (2).jpg" alt="">
+                </div>
+                <!--titulo-->
+                <h3 class="card__titulo">El desenlace más dramático de una liga-1989</h3>
+                <!--parrafo-->
+                <p class="card__parrafo">en ese año liverpool y arsenal se jugaban en la ultima fecha la Premier League.
+                    al final los reds perdieron 0-2 de local y arsenal salio campeon. ese dia 97 hinchas murieron
+                    despues del partido</p>
+                <!--enlace-->
+                <a href="https://www.youtube.com/watch?v=vjtAOMrdQQc" class="card__enlace">video</a>
+            </article>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+
+
+
+</html>
