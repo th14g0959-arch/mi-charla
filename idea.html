@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         .container-header {
             background: #5C0008;
@@ -19,7 +20,8 @@
         .header__logo {
             width: 100px;
         }
-        .container-header nav{
+
+        .container-header nav {
             padding: 15px;
         }
 
@@ -29,6 +31,7 @@
             display: flex;
             gap: 10px;
         }
+
         .container-header a {
             text-decoration: none;
             text-transform: uppercase;
@@ -38,11 +41,58 @@
             transition: background-color 0.5 ease;
 
         }
+
         .container-header a:hover {
-            background-color:var(--rojo-700);
+            background-color: var(--rojo-700);
             padding: 5px;
             border-radius: 5px;
         }
+
+        footer {
+            background: #5C0008;
+            background: radial-gradient(circle, rgba(92, 0, 8, 1) 53%, rgba(176, 0, 26, 1) 70%);
+        }
+
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            border-bottom: 1px solid color var(--gris);
+            padding-bottom: 30px;
+        }
+
+        .footer-botton {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid;
+        }
+
+        .footer-top-col ul li {
+            text-transform: uppercase;
+            font-weight: 800;
+            font-size: 1.2rem;
+            list-style: none
+        }
+
+        .footer-top-col a {
+            color: var(--gris--);
+            text-decoration: none;
+            
+        }
+        .footer-top-col ul {
+            padding: 0px;
+        }
+
+        .footer-top-btn {
+             background-color: var(--rojo-900);
+           
+           width: 200px;
+           text-align: center;
+           border: 3px solid var(--gris);
+           padding: 15px;
+           border-radius: 7px;
+         }
 
     </style>
 </head>
@@ -118,7 +168,74 @@
         </section>
     </main>
     <footer>
+        <div class="footer-top">
+            <section class="footer-top-col">
+                <!--ayuda-->
+                <h4>Ayuda</h4>
+                <ul>
+                    <li><a href="">Contactanos</a></li>
+                    <li><a href="">Metodos de pago</a></li>
+                    <li><a href="">Preuntas Frecuentes</a></li>
+                    <li><a href="">Segui tu envio</a></li>
+                    <li><a href="">terminos y condiciones de uso</a></li>
+                    <li><a href="">defensa de las y los consumidores</a></li>
+                    <li><a href="">descuento para estudiantes</a></li>
+                    <li><a href="">recomenda a tu amigo</a></li>
+                </ul>
+                <a class="footer-top-btn" href="">Boton de arrepentimiento</a>
+            </section>
+            <section class="footer-top-col">
+                <!--Servicios-->
+                <h4>Servicios</h4>
+                <ul>
+                    <li><a href="">Tiendas</a></li>
+                    <li><a href="">Cambios y devoluciones</a></li>
+                    <li><a href="">Cuidado de los productos</a></li>
+                    <li><a href="">Guia de talles</a></li>
+                    <li><a href="">Politica de privacidad</a></li>
+                    <li><a href="">Programa de afiliados</a></li>
+                </ul>
+            </section>
+            <section class="footer-top-col">
+                <!--Acerca-->
+                <h4>Acerca de Pumas</h4>
+                <ul>
+                    <li><a href="">compañia</a></li>
+                    <li><a href="">Noticias corporativas</a></li>
+                    <li><a href="">Empleo</a></li>
+                    <li><a href="">PUMA sale</a></li>
+                </ul>
+            </section>
+            <section class="footer-top-col">
+                <!--Mantenete al dia-->
+                <h3>Mantenete al dia</h3>
+                <p>Inscribite y obtené 15% OFF en tu primera compra</p>
+                <form class="footer-top-news" action="" method="post">
+                    <input placeholder="Ingresa tu correo electronico" type="email" name="correo" id="correo">
+                    <input type="submit" value="SUSCRIBIRME">
+                </form>
+                <div class="footer-top-social">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </section>
+        </div>
 
+        <div class="footer-botton">
+            <section class="footer-botton-legal">
+                <a href="">Terminos y condiciones</a>
+                <a href="">politica de privacidad</a>
+                <a href="">Configurar cookies</a>
+            </section>
+            <section class="foooter-botton-cards">
+                <img src="./img/visa.png" alt="Visa card" height="65" class="footer-botton-img">
+                <img src="./img/redondo.png" alt="MasterCard" height="65" class="footer-botton-img">
+                <img src="./img/tarjeta-american-express.png" alt="American Express" height="65"
+                    class="footer-botton-img">
+            </section>
+        </div>
     </footer>
 </body>
 
