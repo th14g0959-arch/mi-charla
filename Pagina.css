@@ -1,0 +1,103 @@
+:root {
+    /* Los seis colores de la identidad del CET */
+    --violeta: #2A2765;
+    /*declara una variable con el nombre y el valor del color. haci con todos*/
+    --rojo: #DD2E26;
+    --gris: #e7d8c9;
+    --verde: #cad182;
+    --negro: #00090b;
+    --azul: #345FAA;
+
+    /* Escala del violeta */
+    --rojo-1000: #5c0008;
+    --rojo-900: #641220;
+    --rojo-800: #6e1423;
+    --rojo-700: #85182a;
+    --rojo-500: #a11d33;
+    --rojo-300: #b21e35;
+    --rojo-200: #bd1f36;
+    --rojo-100: #c71f37;
+    --rojo-50: #da1e37;
+    --rojo-25: #e01e37;
+
+    --texto: #e7d8c9;
+    /*declara una variable para el color del texto principal*/
+    --texto-suave: #e01e37;
+    /*declara una variable para textos secundarios o suaves*/
+    --blanco: #ffffff;
+    /*declara la variable del blanco*/
+    --e-1: .25rem;
+    --e-2: .5rem;
+    --e-3: 1rem;
+    --e-4: 1.5rem;
+    --e-5: 2rem;
+    --e-6: 3rem;
+    --e-7: 3.5rem;
+}
+
+body {
+    margin: 0;
+    /*quita los espacios en blanco no deseados en el navegador*/
+    min-height: 100vh;
+    /*Asegura que el cuerpo ocupe al menos el 100% de la altura total de la pantalla*/
+    /*convierte el body en un contenedor mas lexible para ordenar sus elementos*/
+    align-items: center;
+    /*centra los elementos del eje secundaria*/
+    justify-content: center;
+    /*centra los elementos del eje principal*/
+    background: var(--rojo-900);
+    /*define el color del fondo de la pantalla*/
+    background-image: url("./img/images.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+    /*define la tipografia del texto*/
+    color: var(--texto);
+    /*define el color del texto del body*/
+}
+
+.container {
+    background-color: var(--rojo-1000);
+    width: 1000px;
+    margin: 0 auto;
+    /*top / botton son 0px y auto para left y right*/
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.card {
+    background-color: var(--rojo-900);
+    ;
+    width: 360px;
+    text-align: center;
+    border: 3px solid var(--gris);
+    padding: 30px;
+    border-radius: 7px;
+}
+
+.card__imagen img {
+    width: 180px;
+    height: 180px;
+}
+
+.card__titulo {
+    font-size: 1.7rem;
+    color: rgb(221, 215, 215);
+}
+
+.card__parrafo {
+    font-size: 1.3rem;
+    line-height: 1.55;
+}
+
+.card__enlace {
+    background-color: #c22c2c;
+    color: black;
+    padding: 10px;
+    border-radius: 20%;
+    margin-bottom: 30px;
+}
