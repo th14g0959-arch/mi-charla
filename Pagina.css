@@ -47,7 +47,7 @@ body {
     /*centra los elementos del eje principal*/
     background: var(--rojo-900);
     /*define el color del fondo de la pantalla*/
-    background-image: url("./img/images.jpg");
+    background-image: url("./img/Estadio.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -56,6 +56,8 @@ body {
     color: var(--texto);
     /*define el color del texto del body*/
 }
+
+/*Caja*/
 
 .container {
     background-color: var(--rojo-1000);
@@ -71,7 +73,6 @@ body {
 
 .card {
     background-color: var(--rojo-900);
-    ;
     width: 360px;
     text-align: center;
     border: 3px solid var(--gris);
@@ -100,4 +101,80 @@ body {
     padding: 10px;
     border-radius: 20%;
     margin-bottom: 30px;
+}
+
+/*header*/
+
+.container-header {
+    background: #5C0008;
+    background: radial-gradient(circle, rgba(92, 0, 8, 1) 53%, rgba(176, 0, 26, 1) 70%);
+    justify-content: space-between;
+    align-items: center;
+    /*alinear verticalmnte a los hijos*/
+    padding: 15px;
+}
+
+.container-header a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--gris-);
+    font-weight: 800;
+    font-size: 1.2rem;
+    transition: background-color 0.5 ease;
+}
+
+.header__logo {
+    width: 100px;
+}
+
+
+.container-header a:hover {
+    background-color: var(--rojo-700);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+/*Footer*/
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    border-bottom: 1px solid color var(--gris);
+    padding-bottom: 30px;
+}
+
+.footer-botton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid;
+}
+
+.footer-top-col {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.2rem;
+    list-style: none;
+    padding: 0px;
+}
+
+.footer-top-col a {
+    color: var(--gris);
+    text-decoration: none;
+
+}
+
+.footer-top-btn {
+    background-color: var(--rojo-900);
+
+    width: 200px;
+    text-align: center;
+    border: 3px solid var(--gris);
+    padding: 15px;
+    border-radius: 7px;
+}
+
+.footer-top-social {
+    font-size: 80px;
 }

@@ -56,7 +56,7 @@
            /*centra los elementos del eje principal*/
            background: var(--rojo-900);
            /*define el color del fondo de la pantalla*/
-           background-image: url("./img/images.jpg");
+           background-image: url("./img/Estadio.jpg");
            background-repeat: no-repeat;
            background-size: cover;
            background-position: top;
@@ -64,6 +64,7 @@
            /*define la tipografia del texto*/
            color: var(--texto);
            /*define el color del texto del body*/
+           display: flex;
          }
 
          /* =========================================================
@@ -79,7 +80,7 @@
            /*agrega relleno interno a los lados*/
            text-align: center;
            /*alinea horizontalmente al centro del texto y de las imagenes*/
-           max-width: 420px;
+           max-width: 600px;
            /*hace que el hancho de la tarjeta tengo un limite osea que nunca supere por eje 420px*/
          }
 
