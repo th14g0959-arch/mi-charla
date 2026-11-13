@@ -46,35 +46,52 @@ body {
     /*define el color del texto del body*/
 }
 
-/*Caja*/
-.solucionar-prob {
-    display: flex;
-    margin: 0;
-    /*quita los espacios en blanco no deseados en el navegador*/
-    min-height: 100vh;
-    /*Asegura que el cuerpo ocupe al menos el 100% de la altura total de la pantalla*/
-    /*convierte el body en un contenedor mas lexible para ordenar sus elementos*/
-    align-items: center;
-    /*centra los elementos del eje secundaria*/
-    justify-content: center;
-    /*centra los elementos del eje principal*/
-}
+
 
 /* =========================================================
    3 · LA TARJETA
    ========================================================= */
-.tarjeta {
-    background: var(--rojo-300);
-    border-top: 8px solid var(--rojo-500);
-    /*Aplica un borde en la parte superior*/
-    border-radius: 12px;
-    /*Redondea las esquinas del contenedor*/
+
+.Contenedor {
+    width: 125vh;
+    max-width: 95%;
+    margin: 0 auto;
     padding: 2.5rem 2rem;
-    /*agrega relleno interno a los lados*/
+    display: block;
+    background-color: var(--rojo-200);
+    color: var(--texto);
+    border: 1px solid var(--rojo-700);
+    border-top: 8px solid var(--rojo-700);
+    border-radius: var(--rojo-50);
+    box-shadow: var(--rojo-25);
+    transition: transform .25s ease, box-shadow .25s ease;
+
+    align-items: center;
     text-align: center;
-    /*alinea horizontalmente al centro del texto y de las imagenes*/
-    max-width: 600px;
-    /*hace que el hancho de la tarjeta tengo un limite osea que nunca supere por eje 420px*/
+
+}
+
+
+.tarjeta-principal {
+    margin: 0 auto;
+    width: 500px;
+   text-align: center;
+    gap: 15px;
+}
+
+.tarjeta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.tarjeta--clara {
+    background: var(--rojo-500);
+    border-top-color: var(--rojo-300);
+    gap: 10px;
+
 }
 
 /* =========================================================
@@ -130,6 +147,8 @@ body {
 .tarjeta--oscura {
     background: var(--rojo-500);
     border-top-color: var(--rojo-300);
+    gap: 10px;
+    width: 141px;
     /*Sobrescribe únicamente el color del borde superior cambiándolo a la variable*/
 }
 
@@ -389,49 +408,24 @@ body {
     font-size: .8rem;
 }
 
-/*===================================== Mi Idea =============================*/
+footer {
+    background: #5C0008;
+    background: radial-gradient(circle, rgba(92, 0, 8, 1) 53%, rgba(176, 0, 26, 1) 70%);
+}
 
-.container {
-    background-color: var(--rojo-1000);
-    width: 1000px;
-    margin: 0 auto;
-    /*top / botton son 0px y auto para left y right*/
+.parte-alta {
     display: flex;
-    gap: 25px;
-    flex-wrap: wrap;
     justify-content: center;
-    padding: 10px;
 }
 
-.card {
-    background-color: var(--rojo-900);
-    ;
-    width: 360px;
-    text-align: center;
-    border: 3px solid var(--gris);
-    padding: 30px;
-    border-radius: 7px;
+.parte-baja {
+    display: flex;
+    justify-content: space-between;
 }
 
-.card__imagen img {
-    width: 180px;
-    height: 180px;
-}
+.parte-baja ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
 
-.card__titulo {
-    font-size: 1.7rem;
-    color: rgb(221, 215, 215);
-}
-
-.card__parrafo {
-    font-size: 1.3rem;
-    line-height: 1.55;
-}
-
-.card__enlace {
-    background-color: #c22c2c;
-    color: black;
-    padding: 10px;
-    border-radius: 20%;
-    margin-bottom: 30px;
 }
