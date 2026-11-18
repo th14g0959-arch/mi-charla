@@ -53,12 +53,12 @@ body {
    ========================================================= */
 
 .Contenedor {
-    width: 125vh;
-    max-width: 95%;
+    width: 120vh;
+    max-width: 50%;
     margin: 0 auto;
     padding: 2.5rem 2rem;
     display: block;
-    background-color: var(--rojo-200);
+    background-color: var(--rojo-1000);
     color: var(--texto);
     border: 1px solid var(--rojo-700);
     border-top: 8px solid var(--rojo-700);
@@ -84,11 +84,10 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 14px;
+    gap: 40px;
 }
 
 .tarjeta--clara {
-    background: var(--rojo-500);
     border-top-color: var(--rojo-300);
     gap: 10px;
 
@@ -145,10 +144,10 @@ body {
 
 /* Variante oscura: mismo bloque, otra combinación de la paleta */
 .tarjeta--oscura {
-    background: var(--rojo-500);
+    background: var(--rojo-900);
     border-top-color: var(--rojo-300);
     gap: 10px;
-    width: 141px;
+    width: 300px;
     /*Sobrescribe únicamente el color del borde superior cambiándolo a la variable*/
 }
 
@@ -188,8 +187,8 @@ body {
     padding: .9rem 2rem;
     border-radius: 999px;
     /* 999px = píldora, sirve para botones */
-    background: var(--texto-suave);
-    color: var(--rojo-300);
+    background: var(--rojo-500);
+    color: var(--rojo-1000);
     font-weight: 700;
     text-decoration: none;
     /* sin subrayado, es un botón y no un texto */
@@ -288,7 +287,6 @@ body {
     color: var(--gris-);
     font-weight: 800;
     font-size: 1.2rem;
-    transition: background-color 0.5 ease;
 }
 
 .header__logo {
@@ -345,67 +343,6 @@ body {
 
 .footer-top-social {
     font-size: 80px;
-}
-
-/* =========================================================
-   LA FICHA DE TU IDEA
-   ========================================================= */
-.ficha {
-    max-width: 520px;
-    margin: var(--e-6) auto;
-    /* 3rem arriba/abajo · auto a los lados = centrada */
-    padding: var(--e-5);
-    /* 2rem de aire adentro */
-    border: 1px solid var(--rojo-500);
-    border-top: 6px solid var(--rojo-500);
-    border-radius: 12px;
-    background: var(--rojo-300);
-}
-
-.ficha__etiqueta {
-    margin: 0;
-    font-size: .75rem;
-    letter-spacing: .16em;
-    text-transform: uppercase;
-    color: var(--texto);
-}
-
-.ficha__titulo {
-    margin: var(--e-2) 0 var(--e-5);
-    font-size: 1.6rem;
-    line-height: 1.25;
-    color: var(--texto);
-}
-
-.ficha__campo {
-    margin: var(--e-4) 0 var(--e-1);
-    font-size: .72rem;
-    letter-spacing: .12em;
-    text-transform: uppercase;
-    color: var(--blanco);
-}
-
-.ficha__texto {
-    margin: 0;
-    line-height: 1.65;
-    color: var(--texto);
-}
-
-/* las etiquetas: display inline-flex las deja como píldoras */
-.ficha__tags {
-    margin: var(--e-5) 0 0;
-    padding: 0;
-    display: flex;
-    gap: var(--e-2);
-    list-style: none;
-}
-
-.ficha__tags li {
-    padding: var(--e-1) var(--e-3);
-    border-radius: 999px;
-    background: var(--rojo-900);
-    color: var(--texto);
-    font-size: .8rem;
 }
 
 footer {
