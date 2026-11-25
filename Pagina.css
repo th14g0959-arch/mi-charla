@@ -121,252 +121,236 @@ body {
 }
 
 .tarjeta__nombre {
-    margin: .4rem 0 0;
-    font-size: 2.2rem;
-    font-weight: 700;
-    letter-spacing: -0.01em;
-    color: var(--gris);
+  margin: .4rem 0 0; /* Margen superior de 0.4rem, derecha 0, inferior 0, izquierda 0 */
+  font-size: 2.2rem; /* Tamaño de la letra */
+  font-weight: 700; /* Texto en negrita */
+  letter-spacing: -0.01em; /* Reduce el espacio entre lteras */
+  color: var(--gris); /* Color del texto */
 }
 
 .tarjeta__frase {
-    margin: 1rem 0 0;
-    font-size: 1.25rem;
-    line-height: 1.55;
-    /*define la altura entre lineas de texto */
-    color: var(--gris);
+  margin: 1rem 0 0; /* Espacio superior */
+  font-size: 1.25rem; /* Tamaño del texto */
+  line-height: 1.55; /* Altura entre líneas */
+  color: var(--gris); /* Color del texto */
 }
 
 .tarjeta__autor {
-    margin: 1.25rem 0 0;
-    font-size: .82rem;
-    color: var(--gris);
+  margin: 1.25rem 0 0; /* Espacio superior */
+  font-size: .82rem; /* Tamaño pequeño para el autor */
+  color: var(--gris); /* Color del texto */
 }
 
-/* Variante oscura: mismo bloque, otra combinación de la paleta */
+/* Variante oscura de la tarjeta */
 .tarjeta--oscura {
-    background: var(--rojo-900);
-    border-top-color: var(--rojo-300);
-    gap: 10px;
-    width: 300px;
-    /*Sobrescribe únicamente el color del borde superior cambiándolo a la variable*/
+  background: var(--rojo-900); /* Fondo oscuro */
+  border-top-color: var(--rojo-300); /* Cambia el color del borde superior */
+  gap: 10px; /* Espacio entre elementos hijos */
+  width: 300px; /* Ancho de la tarjeta */
 }
 
 .tarjeta__pregunta {
-    margin: 0;
-    font-size: .8rem;
-    font-weight: 600;
-    letter-spacing: .14em;
-    text-transform: uppercase;
-    /*Convierte el texto a mayúsculas*/
-    color: var(--gris);
+  margin: 0; /* Elimina los márgenes */
+  font-size: .8rem; /* Tamaño de letra */
+  font-weight: 600; /* Semi-negrita */
+  letter-spacing: .14em; /* Espacio entre letras */
+  text-transform: uppercase; /* Convierte el texto en mayúsculas */
+  color: var(--gris); /* Color del texto */
 }
 
 .tarjeta__respuesta {
-    margin: .5rem 0 0;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: var(--gris);
+  margin: .5rem 0 0; /* Margen superior */
+  font-size: 1.4rem; /* Tamaño de letra */
+  font-weight: 700; /* Negrita */
+  color: var(--gris); /* Color del texto */
 }
 
-
 .tarjeta__respuesta--enlace {
-    margin: .5rem 0 0;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: var(--gris);
+  margin: .5rem 0 0; /* Margen superior */
+  font-size: 1.4rem; /* Tamaño de letra */
+  font-weight: 700; /* Negrita */
+  color: var(--gris); /* Color del texto */
 }
 
 .imagenes-liverpool {
-    width: 100%;
-    /*Hace que el elemento ocupe todo el ancho disponible (100%) dentro de su contenedor padre.*/
+  width: 100%; /* Ocupa todo el ancho disponible */
 }
 
 .tarjeta__respuesta--enlace {
-    display: inline-block;
-    margin-top: 2rem;
-    padding: .9rem 2rem;
-    border-radius: 999px;
-    /* 999px = píldora, sirve para botones */
-    background: var(--rojo-500);
-    color: var(--rojo-1000);
-    font-weight: 700;
-    text-decoration: none;
-    /* sin subrayado, es un botón y no un texto */
+  display: inline-block; /* Permite aplicar ancho, alto y márgenes */
+  margin-top: 2rem; /* Espacio superior */
+  padding: .9rem 2rem; /* Espacio interno */
+  border-radius: 999px; /* Bordes muy redondeados */
+  background: var(--rojo-500); /* Color de fondo */
+  color: var(--rojo-1000); /* Color del texto */
+  font-weight: 700; /* Negrita */
+  text-decoration: none; /* Quita el subrayado */
 }
 
 .tarjeta__respuesta--enlace:hover {
-    background: var(--rojo-100);
+  background: var(--rojo-100); /* Cambia el fondo al pasar el mouse */
 }
 
 .tarjeta__respuesta--enlace:active {
-    background: var(--rojo-900);
+  background: var(--rojo-900); /* Cambia el fondo al hacer clic */
 }
 
-/* Accesibilidad: el foco del teclado tiene que verse SIEMPRE */
 .tarjeta__respuesta--enlace:focus-visible {
-    outline: 3px solid #ffffff;
-    outline-offset: 3px;
+  outline: 3px solid #ffffff; /* Contorno blanco */
+  outline-offset: 3px; /* Separa el contorno del elemento */
 }
 
 .ficha {
-    width: 300px;
-    padding: 2rem;
-    border: 2px solid var(--texto);
-    background: var(--rojo-25);
+  width: 300px; /* Ancho fijo */
+  padding: 2rem; /* Espacio interno */
+  border: 2px solid var(--texto); /* Borde sólido */
+  background: var(--rojo-25); /* Color de fondo */
 }
 
-/* ¿Dice 300px? Fijate con el cursor: la caja mide 368px. */
+/* Aplica box-sizing a todos los elementos */
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box; /* Incluye padding y border dentro del tamaño */
 }
 
-/*SEGUNDA PAGINA*/
-
+/* SEGUNDA PAGINA */
 
 .card {
-    background-color: var(--rojo-900);
-    width: 850px;
-    text-align: center;
-    border: 3px solid var(--gris);
-    padding: 30px;
-    border-radius: 7px;
+  background-color: var(--rojo-900); /* Color de fondo */
+  width: 850px; /* Ancho */
+  text-align: center; /* Centra el texto */
+  border: 3px solid var(--gris); /* Borde */
+  padding: 30px; /* Espacio interno */
+  border-radius: 7px; /* Esquinas redondeadas */
 }
 
 .card__imagen img {
-    width: 180px;
-    height: 180px;
+  width: 180px; /* Ancho de imagen */
+  height: 180px; /* Alto de imagen */
 }
 
 .card__titulo {
-    font-size: 1.7rem;
-    color: rgb(221, 215, 215);
+  font-size: 1.7rem; /* Tamaño de título */
+  color: rgb(221, 215, 215); /* Color del texto */
 }
 
 .card__parrafo {
-    font-size: 1.3rem;
-    line-height: 1.55;
+  font-size: 1.3rem; /* Tamaño del párrafo */
+  line-height: 1.55; /* Altura entre líneas */
 }
 
 .card__enlace {
-    background-color: #c22c2c;
-    color: black;
-    padding: 10px;
-    border-radius: 20%;
-    margin-bottom: 30px;
+  background-color: #c22c2c; /* Fondo del enlace */
+  color: black; /* Color del texto */
+  padding: 10px; /* Espacio interno */
+  border-radius: 20%; /* Bordes redondeados */
+  margin-bottom: 30px; /* Margen inferior */
 }
 
-/*header*/
+/* HEADER */
 
 .container {
-    background-color: var(--rojo-1000);
-    width: 1000px;
-    margin: 0 auto;
-    /*top / botton son 0px y auto para left y right*/
-    display: flex;
-    gap: 25px;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px;
+  background-color: var(--rojo-1000); /* Fondo */
+  width: 1000px; /* Ancho */
+  margin: 0 auto; /* Centra horizontalmente */
+  display: flex; /* Activa Flexbox */
+  gap: 25px; /* Espacio entre elementos */
+  flex-wrap: wrap; /* Permite salto de línea */
+  justify-content: center; /* Centra los elementos */
+  padding: 10px; /* Espacio interno */
 }
 
-
 .container-header {
-    background: #5C0008;
-    background: radial-gradient(circle, rgba(92, 0, 8, 1) 53%, rgba(176, 0, 26, 1) 70%);
-    justify-content: space-between;
-    align-items: center;
-    /*alinear verticalmnte a los hijos*/
-    padding: 15px;
+  background: #5C0008; /* Color de respaldo */
+  background: radial-gradient(circle, rgba(92, 0, 8, 1) 53%, rgba(176, 0, 26, 1) 70%); /* Degradado circular */
+  justify-content: space-between; /* Separa elementos */
+  align-items: center; /* Centra verticalmente */
+  padding: 15px; /* Espacio interno */
 }
 
 .container-header a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: var(--gris-);
-    font-weight: 800;
-    font-size: 1.2rem;
+  text-decoration: none; /* Quita subrayado */
+  text-transform: uppercase; /* Convierte a mayúsculas */
+  color: var(--gris-); /* Color del enlace */
+  font-weight: 800; /* Negrita */
+  font-size: 1.2rem; /* Tamaño del texto */
 }
 
 .header__logo {
-    width: 100px;
+  width: 100px; /* Ancho del logo */
 }
-
 
 .container-header a:hover {
-    background-color: var(--rojo-700);
-    padding: 5px;
-    border-radius: 5px;
+  background-color: var(--rojo-700); /* Fondo al pasar el mouse */
+  padding: 5px; /* Espacio interno */
+  border-radius: 5px; /* Bordes redondeados */
 }
 
+/* FOOTER */
 
-/*Footer*/
 .footer-top {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-    border-bottom: 1px solid color var(--gris);
-    padding-bottom: 30px;
+  display: flex; /* Flexbox */
+  justify-content: space-between; /* Separa elementos */
+  margin-bottom: 40px; /* Espacio inferior */
+  border-bottom: 1px solid color var(--gris); /* Borde inferior */
+  padding-bottom: 30px; /* Espacio interno inferior */
 }
 
 .footer-botton {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-top: 1px solid;
+  display: flex; /* Flexbox */
+  align-items: center; /* Centrado vertical */
+  justify-content: space-between; /* Distribuye elementos */
+  border-top: 1px solid; /* Borde superior */
 }
 
 .footer-botton a {
-    color: var(--texto);
+  color: var(--texto); /* Color de los enlaces */
 }
 
 .footer-top-col {
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 1.2rem;
-    list-style: none;
-    padding: 0px;
+  text-transform: uppercase; /* Texto en mayúsculas */
+  font-weight: 800; /* Negrita */
+  font-size: 1.2rem; /* Tamaño del texto */
+  list-style: none; /* Quita viñetas */
+  padding: 0; /* Sin relleno */
 }
 
 .footer-top-col a {
-    color: var(--gris);
-    text-decoration: none;
-
+  color: var(--gris); /* Color de enlace */
+  text-decoration: none; /* Sin subrayado */
 }
 
 .footer-top-btn {
-    background-color: var(--rojo-900);
-
-    width: 200px;
-    text-align: center;
-    border: 3px solid var(--gris);
-    padding: 15px;
-    border-radius: 7px;
+  background-color: var(--rojo-900); /* Fondo */
+  width: 200px; /* Ancho */
+  text-align: center; /* Centra el texto */
+  border: 3px solid var(--gris); /* Borde */
+  padding: 15px; /* Espacio interno */
+  border-radius: 7px; /* Esquinas redondeadas */
 }
 
 .footer-top-social {
-    font-size: 80px;
+  font-size: 80px; /* Tamaño de iconos o texto */
 }
 
 footer {
-    background: #5C0008;
-    background: radial-gradient(circle, rgba(92, 0, 8, 1) 53%, rgba(176, 0, 26, 1) 70%);
+  background: #5C0008; /* Color de respaldo */
+  background: radial-gradient(circle, rgba(92, 0, 8, 1) 53%, rgba(176, 0, 26, 1) 70%); /* Degradado */
 }
 
 .parte-alta {
-    display: flex;
-    justify-content: center;
+  display: flex; /* Flexbox */
+  justify-content: center; /* Centra contenido */
 }
 
 .parte-baja {
-    display: flex;
-    justify-content: space-between;
+  display: flex; /* Flexbox */
+  justify-content: space-between; /* Distribuye elementos */
 }
 
 .parte-baja ul {
-    display: flex;
-    list-style: none;
-    gap: 10px;
-
+  display: flex; /* Elementos en fila */
+  list-style: none; /* Sin viñetas */
+  gap: 10px; /* Espacio entre elementos */
 }
