@@ -6,43 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LIVERPOOL FC</title>
     <link rel="stylesheet" href="./Pagina.css">
+    <!-- Esta sola línea engancha el CSS externo. Sin esto, no se ve nada. -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- link: conecta una biblioteca externa de Font Awesome para poder usar iconos como Facebook, Instagram, Twitter, etc. -->
 
 </head>
 
 <body>
     <!--Encabezado-->
     <header class="container-header">
-        <div class="parte-alta">
+        <div class="parte-alta"> <!-- div: contenedor para agrupar elementos -->
             <a href="./index.html"><img src="./img/OtroescudoLIV.webp" alt="EscudoLiverpool" height="90"></a>
+            <!-- a: enlace que vuelve a la página principal -->
         </div>
-        <div class="parte-baja">
-            <img src="./img/ClubesTed.png" height="90" alt="">
-            <h1>Partidos que marcaron un punto en la historia</h1>
-            <nav>
-                <ul>
+        <div class="parte-baja"> <!-- div: segunda parte del encabezado -->
+            <img src="./img/ClubesTed.png" height="90" alt=""> <!-- img: muestra una imagen -->
+            <h1>Partidos que marcaron un punto en la historia</h1> <!-- h1: título principal de la página -->
+            <nav> <!-- nav: menú de navegación -->
+                <ul> <!-- ul: lista desordenada -->
                     <li><a class="3nlace" href="./segundapag.html">Explicacion</a></li>
-                    <li><a class="3nlace" href="./tercerapag.html">Mi Charla</a></li>
+                    <!-- li: elemento de la lista -->
+                    <li><a class="3nlace" href="./tercerapag.html">Mi Charla</a></li> <!-- a: enlace a otra página -->
                 </ul>
             </nav>
         </div>
 
 
     </header>
-    <main>
+    <main> <!-- main: contenido principal de la página -->
         <section class="container"> <!--container-->
-            <article class="card">
+            <article class="card"> <!-- article: primera tarjeta independiente -->
                 <!--imagen-->
-                <div class="card__imagen">
+                <div class="card__imagen"> <!-- div: contenedor del video -->
                     <iframe width="300" height="315" src="https://www.youtube.com/embed/NQdiezMj2qM?si=umQxKQQwPmshPEI_"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <!-- iframe: inserta un video de YouTube -->
                 </div>
                 <!--titulo-->
-                <h3 class="card__titulo">El Milagro de Estambul-2005</h3>
+                <h3 class="card__titulo">El Milagro de Estambul-2005</h3> <!-- h3: subtítulo -->
             </article>
-            <article class="card">
+            <article class="card"> <!-- article: segunda tarjeta -->
                 <!--imagen-->
                 <div class="card__imagen">
                     <iframe width="300" height="315" src="https://www.youtube.com/embed/zutXWIRnOV8?si=LH3NUavtZhMO6TGj"
@@ -53,7 +58,7 @@
                 <!--titulo-->
                 <h3 class="card__titulo">la remontada de Anfield-2019</h3>
             </article>
-            <article class="card">
+            <article class="card"> <!-- article: tercera tarjeta -->
                 <!--imagen-->
                 <div class="card__imagen">
                     <iframe width="300" height="315" src="https://www.youtube.com/embed/sx97LGqGap8?si=1zVyHpdymUDHq7XL"
@@ -64,7 +69,7 @@
                 <!--titulo-->
                 <h3 class="card__titulo">La final de Gerrard-2006</h3>
             </article>
-            <article class="card">
+            <article class="card"> <!-- article: cuarta tarjeta -->
                 <!--imagen-->
                 <div class="card__imagen">
                     <iframe width="300" height="315" src="https://www.youtube.com/embed/vjtAOMrdQQc?si=xWCP5HKl7ynHEFHr"
@@ -78,35 +83,40 @@
         </section>
     </main>
     <footer>
-        <div class="footer-top">
-            <section class="footer-top-col">
+        <!-- footer: pie de página -->
+        <div class="footer-top"> <!-- div: sección superior del footer -->
+            <section class="footer-top-col"> <!-- section: columna de ayuda -->
                 <!--ayuda-->
-                <h4>Ayuda</h4>
-                <ul>
+                <h4>Ayuda</h4> <!-- h4: título de sección -->
+                <ul><!-- ul: lista desordenada -->
                     <li><a href="">Contactanos</a></li>
                     <li><a href="">Preguntas Frecuentes</a></li>
                     <li><a href="">problemas con la pagina</a></li>
                     <li><a href="">no carga la pagina</a></li>
                 </ul>
             </section>
-            <section class="footer-top-col">
-                </form>
-                <div class="footer-top-social">
+            <section class="footer-top-col"> <!-- section: redes sociales -->
+                <div class="footer-top-social"> <!-- div: agrupa los iconos sociales -->
                     <a href="https://www.facebook.com/LiverpoolFC/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <!-- a: enlace a Facebook -->
                     <a href="https://www.tiktok.com/@liverpoolfc"><i class="fa-brands fa-tiktok"></i></a>
+                    <!-- a: enlace a TikTok -->
                     <a href="https://www.instagram.com/liverpoolfc"><i class="fa-brands fa-instagram"></i></a>
+                    <!-- a: enlace a Instagram -->
                     <a href="https://www.youtube.com/user/LiverpoolFC"><i class="fa-brands fa-youtube"></i></a>
+                    <!-- a: enlace a YouTube -->
                 </div>
             </section>
         </div>
 
-        <div class="footer-botton">
-            <section class="footer-botton-legal">
+        <div class="footer-botton"> <!-- parte inferior del footer -->
+            <section class="footer-botton-legal"><!-- sección legal -->
                 <a href="">Terminos y condiciones</a>
                 <a href="">politica de privacidad</a>
                 <a href="">Configurar cookies</a>
             </section>
-            <section class="foooter-botton-cards">
+            <section class="foooter-botton-cards"> <!-- sección de patrocinadores -->
+                <!-- img: logos de patrocinadores -->
                 <img src="./img/Chartered.webp" alt="Standard Chartered" height="65" class="footer-botton-img">
                 <img src="./img/Adidas.jpg" alt="adidas" height="65" class="footer-botton-img">
                 <img src="./img/AXA.png" alt="" height="65" class="footer-botton-img">
